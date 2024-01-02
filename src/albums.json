@@ -2,43 +2,37 @@
     {
         "id": 89141,
         "title": "Bleed American",
-        "artist": "Jimmy Eats World",
-        "cover": "https://krm-cdn.s3.amazonaws.com/images/us/1/9/9/19994.jpg"
+        "artist": "Jimmy Eats World"
     },
 
     {
         "id": 74541,
         "title": "Minutes to Midnight",
-        "artist": "Lincoln Park",
-        "cover": "https://i.discogs.com/P6rqfF1MmH2pVGHxNy6YCsX-OtCcDgNGbj3ZtdE90hI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4OTYw/NDUtMTI2NDg0NzAz/MS5qcGVn.jpeg"
+        "artist": "Lincoln Park"
     },
 
     {
         "id": 66798,
         "title": "Slippery When Wet",
-        "artist": "Bon Jovi",
-        "cover": "https://upload.wikimedia.org/wikipedia/en/a/ab/Bon_jovi_slippery_when_wet.jpg"
+        "artist": "Bon Jovi"
     },
 
     {
         "id": 631103,
         "title": "So Wrong, Its Right",
-        "artist": "All Time Low",
-        "cover": "https://e.snmc.io/i/1200/s/b1a5e2ede9fe2214c8610ac867473e4b/1992909"
+        "artist": "All Time Low"
     },
 
     {
         "id": 5,
         "title": "The Black Parade",
-        "artist": "My Chemical Romance",
-        "cover": "https://upload.wikimedia.org/wikipedia/en/e/ea/Blackparadecover.jpg"
+        "artist": "My Chemical Romance"
     },
 
     {
         "id": 6,
         "title": "Yeezus",
-        "artist": "Kanye West",
-        "cover": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XzioGlY0-5TciabmfSl5OAHaHa%26pid%3DApi&f=1&ipt=786860d65dc629655cf6356de4b6e04a7b8a563534b15109c0b21191d1764591&ipo=images"
+        "artist": "Kanye West"
     }
 
 ]

@@ -56,7 +56,6 @@ const Album = ({ id, title, artist, cover }) => {
 
     return (
         <div className="album">
-            <img src={cover} alt={`${title} - ${artist}`} />
             <h2>{title}</h2>
             <p>{artist}</p>
             ${priceResponse?.lowest_price?.value ?? 'N/A'}
