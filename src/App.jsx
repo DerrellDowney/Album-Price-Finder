@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./App.css";
 import AlbumGrid from "./components/AlbumGrid";
+import handleSubmit from "./handlesubmit";
 import data from "./albums.json";
+
 
 var key = "hlYVwXGnqOkyazkSiRrF"
 var secret = "GZqvthebYAXTUCdzwOoULrpHnbVfCCYz"
