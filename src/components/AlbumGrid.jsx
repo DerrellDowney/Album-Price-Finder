@@ -4,6 +4,9 @@ import './AlbumGrid.css'
 
 
 
+/*
+Creates a grid of albums 
+*/
 const AlbumGrid = ({ albums }) => {
     return (
         <div className="album-grid">
