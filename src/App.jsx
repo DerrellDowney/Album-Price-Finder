@@ -2,7 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import "./App.css";
 import AlbumGrid from "./components/AlbumGrid";
 import handleSubmit from "./handlesubmit";
-import data from "./albums.json";
+import { collection, getDocs } from "firebase/firestore";
+import { firestore } from "./firebase_setup";
 
 
 var key = "hlYVwXGnqOkyazkSiRrF"
@@ -15,6 +16,7 @@ function App() {
     const idRef = useRef();
 
     const [response, setResponse] = useState();
+    const [data, setData] = useState([]);
 
     const submitHandler = (e) => {
         e.preventDefault();
@@ -24,14 +26,14 @@ function App() {
         idRef.current.value = "";
     }
 
+
     useEffect(() => {
-        window
-            .fetch("https://api.discogs.com/marketplace/stats/4664769")
-            .then((res) => {
-                res.json().then((json) => {
-                    setResponse(json);
-                });
-            });
+        const fetchData = async () => {
+            const querySnapshot = await getDocs(collection(firestore, "albums"));
+            const newData = querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+            setData(newData);
+        }
+        fetchData();
     }, []);
 
     

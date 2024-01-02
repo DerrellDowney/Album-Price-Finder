@@ -3,7 +3,7 @@ import "./Album.css";
 
 const token = "UsyFtBgphAgtqvVhiveUcxHNCpidstoWHGhDHDCy";
 
-const Album = ({ id, title, artist, cover }) => {
+const Album = ({ id, title, artist }) => {
     //* Grabbing the price of the album
 
     const [priceResponse, setPriceResponse] = useState();
