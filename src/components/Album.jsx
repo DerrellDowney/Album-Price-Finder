@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import './Album.css'
 
 
-const Album = ({ id, title, artist, cover }) => {
+const Album = ({ id, title, artist }) => {
 
     const [response, setResponse] = useState();
 
@@ -19,7 +19,6 @@ const Album = ({ id, title, artist, cover }) => {
 
     return (
         <div className="album">
-            <img src={cover} alt={`${title} - ${artist}`} />
             <h2>{title}</h2>
             <p>{artist}</p>
             {response&&response.lowest_price.value}
