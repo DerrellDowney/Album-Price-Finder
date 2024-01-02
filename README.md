@@ -1,52 +1,36 @@
-# Getting Started with Create React App
+# Album Price Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that allows you to track the prices of your favorite albums. It uses the Discogs API to fetch album data and Firestore to store the albums. The application finds the cheapest price of the album among various online marketplaces.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Input Favorite Albums**: Input the names of your favorite albums in the application.
+2. **Track Prices**: The application tracks the prices of these albums on various online marketplaces.
+3. **Cheapest Price**: The application displays the cheapest price of the album among the fetched prices.
 
-### `npm start`
+## How to Use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository to your local machine.
+2. Install the dependencies using `npm install`.
+3. Start the application using `npm start`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Code Overview
 
-### `npm test`
+The application is divided into three main parts:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **API Requests**: This part uses `useEffect` to make requests to the Discogs API and fetch album data.
+2. **Data Storage**: This part uses Firebase Firestore to store the albums and their prices.
+3. **Price Tracking**: This part compares the prices of the albums fetched from various online marketplaces and displays the cheapest price.
 
-### `npm run build`
+## Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application uses the following libraries:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `firebase` for interacting with Firestore.
+- `react` and `react-dom` for building the user interface.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contribution
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-# Album Price Finder
-
-## Uses Discogs API
-Discogs [Developer](https://www.discogs.com/developers) page
+Feel free to contribute to this project. Any contributions you make are greatly appreciated. Please fork the repository and create a pull request, or simply drop me an email at `derrell.downey@gmail.com`.
 
 
-## Todo
-1. Connect authorization tokens
-2. Get the price for each item
-3. Add functionality to add and remove albums from grid
-4. Add searching so album ids are automaticalls set
