@@ -18,6 +18,10 @@ function App() {
     const [response, setResponse] = useState();
     const [data, setData] = useState([]);
 
+
+    /*
+    Submits the album information to be stored in the firestore albums collection
+    */
     const submitHandler = (e) => {
         e.preventDefault();
         handleSubmit(titleRef.current.value, artistRef.current.value, idRef.current.value);
@@ -27,6 +31,12 @@ function App() {
     }
 
 
+    /*
+    Fetches data from the firestore albums collection
+
+    TODO: Figure out how to refresh page when a new entry is added as albums don't display until refresh
+
+    */
     useEffect(() => {
         const fetchData = async () => {
             const querySnapshot = await getDocs(collection(firestore, "albums"));
